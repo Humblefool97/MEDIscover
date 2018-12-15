@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8DB98FB21C2F49900C22391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB98FA21C2F49900C22391 /* AppDelegate.swift */; };
-		B8DB98FD21C2F49900C22391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB98FC21C2F49900C22391 /* ViewController.swift */; };
+		A4F96B6D47AAB56759AD485B /* Pods_Mediscover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D268D68852E621EA5C4196 /* Pods_Mediscover.framework */; };
+		B843798621C433C50074D904 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B843798521C433C50074D904 /* HomeViewController.swift */; };
+		B843798821C43AB50074D904 /* HealthOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B843798721C43AB50074D904 /* HealthOS-Info.plist */; };
+		B843798A21C43BBA0074D904 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B843798921C43BBA0074D904 /* NetworkClient.swift */; };
+		B843798C21C43C640074D904 /* NetworkClient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B843798B21C43C640074D904 /* NetworkClient+Constants.swift */; };
+		B843798E21C443430074D904 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B843798D21C443430074D904 /* Constants.swift */; };
+		B87336DF21C5044A00FC7039 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87336DE21C5044A00FC7039 /* Storyboard.swift */; };
+		B87336E121C5097400FC7039 /* UIViewController+StoryBoardId.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87336E021C5097400FC7039 /* UIViewController+StoryBoardId.swift */; };
+		B87336E321C59C8600FC7039 /* PostLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87336E221C59C8600FC7039 /* PostLogin.storyboard */; };
+		B87336E621C5AD9700FC7039 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87336E521C5AD9600FC7039 /* Images.xcassets */; };
+		B8B43C0921C5B7A20021FFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C0821C5B7A20021FFF4 /* AppDelegate.swift */; };
+		B8B43C0B21C5B7EE0021FFF4 /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C0A21C5B7EE0021FFF4 /* MedicineTableViewCell.swift */; };
+		B8DB98FD21C2F49900C22391 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB98FC21C2F49900C22391 /* LoginViewController.swift */; };
 		B8DB990021C2F49900C22391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DB98FE21C2F49900C22391 /* Main.storyboard */; };
 		B8DB990321C2F49900C22391 /* Mediscover.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8DB990121C2F49900C22391 /* Mediscover.xcdatamodeld */; };
-		B8DB990521C2F49B00C22391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DB990421C2F49B00C22391 /* Assets.xcassets */; };
 		B8DB990821C2F49B00C22391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DB990621C2F49B00C22391 /* LaunchScreen.storyboard */; };
 		B8DB991321C2F49B00C22391 /* MediscoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB991221C2F49B00C22391 /* MediscoverTests.swift */; };
 		B8DB991E21C2F49B00C22391 /* MediscoverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB991D21C2F49B00C22391 /* MediscoverUITests.swift */; };
+		B8DB992C21C3018B00C22391 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8DB992B21C3018B00C22391 /* GoogleService-Info.plist */; };
+		B8DB993521C3235100C22391 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB993421C3235100C22391 /* SignUpViewController.swift */; };
+		B8DB993721C3283A00C22391 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB993621C3283A00C22391 /* BaseViewController.swift */; };
+		B8DB993921C328EB00C22391 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB993821C328EB00C22391 /* LoginController.swift */; };
+		B8DB993B21C32CD100C22391 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB993A21C32CD100C22391 /* SignupController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +50,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6671E780308B7732B541AAC0 /* Pods-Mediscover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mediscover.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mediscover/Pods-Mediscover.debug.xcconfig"; sourceTree = "<group>"; };
+		81D268D68852E621EA5C4196 /* Pods_Mediscover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mediscover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1BBE4B45C9DD83EE30E79E /* Pods-Mediscover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mediscover.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mediscover/Pods-Mediscover.release.xcconfig"; sourceTree = "<group>"; };
+		B843798521C433C50074D904 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B843798721C43AB50074D904 /* HealthOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HealthOS-Info.plist"; sourceTree = "<group>"; };
+		B843798921C43BBA0074D904 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		B843798B21C43C640074D904 /* NetworkClient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Constants.swift"; sourceTree = "<group>"; };
+		B843798D21C443430074D904 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B87336DE21C5044A00FC7039 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		B87336E021C5097400FC7039 /* UIViewController+StoryBoardId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryBoardId.swift"; sourceTree = "<group>"; };
+		B87336E221C59C8600FC7039 /* PostLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostLogin.storyboard; sourceTree = "<group>"; };
+		B87336E521C5AD9600FC7039 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
+		B8B43C0821C5B7A20021FFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8B43C0A21C5B7EE0021FFF4 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
 		B8DB98F721C2F49800C22391 /* Mediscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mediscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8DB98FA21C2F49900C22391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8DB98FC21C2F49900C22391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8DB98FC21C2F49900C22391 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B8DB98FF21C2F49900C22391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8DB990221C2F49900C22391 /* Mediscover.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mediscover.xcdatamodel; sourceTree = "<group>"; };
-		B8DB990421C2F49B00C22391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8DB990721C2F49B00C22391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8DB990921C2F49B00C22391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8DB990E21C2F49B00C22391 /* MediscoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediscoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +76,11 @@
 		B8DB991921C2F49B00C22391 /* MediscoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediscoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DB991D21C2F49B00C22391 /* MediscoverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediscoverUITests.swift; sourceTree = "<group>"; };
 		B8DB991F21C2F49B00C22391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8DB992B21C3018B00C22391 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8DB993421C3235100C22391 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B8DB993621C3283A00C22391 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B8DB993821C328EB00C22391 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B8DB993A21C32CD100C22391 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F96B6D47AAB56759AD485B /* Pods_Mediscover.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +109,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15AD1EA40A4F2AB1D6936964 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6671E780308B7732B541AAC0 /* Pods-Mediscover.debug.xcconfig */,
+				8F1BBE4B45C9DD83EE30E79E /* Pods-Mediscover.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5693746C6BBA77EDA15D8086 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81D268D68852E621EA5C4196 /* Pods_Mediscover.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B87336E421C59D1800FC7039 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B8DB98FE21C2F49900C22391 /* Main.storyboard */,
+				B8DB990621C2F49B00C22391 /* LaunchScreen.storyboard */,
+				B87336E221C59C8600FC7039 /* PostLogin.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		B8DB98EE21C2F49800C22391 = {
 			isa = PBXGroup;
 			children = (
+				B8B43C0821C5B7A20021FFF4 /* AppDelegate.swift */,
+				B87336E521C5AD9600FC7039 /* Images.xcassets */,
+				B87336E421C59D1800FC7039 /* Storyboards */,
 				B8DB98F921C2F49800C22391 /* Mediscover */,
 				B8DB991121C2F49B00C22391 /* MediscoverTests */,
 				B8DB991C21C2F49B00C22391 /* MediscoverUITests */,
 				B8DB98F821C2F49800C22391 /* Products */,
+				15AD1EA40A4F2AB1D6936964 /* Pods */,
+				5693746C6BBA77EDA15D8086 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +164,15 @@
 		B8DB98F921C2F49800C22391 /* Mediscover */ = {
 			isa = PBXGroup;
 			children = (
-				B8DB98FA21C2F49900C22391 /* AppDelegate.swift */,
-				B8DB98FC21C2F49900C22391 /* ViewController.swift */,
-				B8DB98FE21C2F49900C22391 /* Main.storyboard */,
-				B8DB990421C2F49B00C22391 /* Assets.xcassets */,
-				B8DB990621C2F49B00C22391 /* LaunchScreen.storyboard */,
+				B8DB992F21C3048400C22391 /* controller */,
+				B8DB992E21C3047E00C22391 /* model */,
+				B8DB992B21C3018B00C22391 /* GoogleService-Info.plist */,
+				B8DB992D21C3047600C22391 /* view */,
 				B8DB990921C2F49B00C22391 /* Info.plist */,
 				B8DB990121C2F49900C22391 /* Mediscover.xcdatamodeld */,
+				B843798721C43AB50074D904 /* HealthOS-Info.plist */,
+				B843798D21C443430074D904 /* Constants.swift */,
+				B87336DE21C5044A00FC7039 /* Storyboard.swift */,
 			);
 			path = Mediscover;
 			sourceTree = "<group>";
@@ -128,6 +195,37 @@
 			path = MediscoverUITests;
 			sourceTree = "<group>";
 		};
+		B8DB992D21C3047600C22391 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B8DB98FC21C2F49900C22391 /* LoginViewController.swift */,
+				B8DB993421C3235100C22391 /* SignUpViewController.swift */,
+				B8DB993621C3283A00C22391 /* BaseViewController.swift */,
+				B843798521C433C50074D904 /* HomeViewController.swift */,
+				B87336E021C5097400FC7039 /* UIViewController+StoryBoardId.swift */,
+				B8B43C0A21C5B7EE0021FFF4 /* MedicineTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B8DB992E21C3047E00C22391 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B8DB992F21C3048400C22391 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8DB993821C328EB00C22391 /* LoginController.swift */,
+				B8DB993A21C32CD100C22391 /* SignupController.swift */,
+				B843798921C43BBA0074D904 /* NetworkClient.swift */,
+				B843798B21C43C640074D904 /* NetworkClient+Constants.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8DB992221C2F49B00C22391 /* Build configuration list for PBXNativeTarget "Mediscover" */;
 			buildPhases = (
+				A6E8F07863A57F66D5365B6B /* [CP] Check Pods Manifest.lock */,
 				B8DB98F321C2F49800C22391 /* Sources */,
 				B8DB98F421C2F49800C22391 /* Frameworks */,
 				B8DB98F521C2F49800C22391 /* Resources */,
+				F932E018C26B1D6FEDB41CBB /* [CP] Copy Pods Resources */,
+				F654A1BB786D498F5A62B3B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,9 +333,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87336E321C59C8600FC7039 /* PostLogin.storyboard in Resources */,
 				B8DB990821C2F49B00C22391 /* LaunchScreen.storyboard in Resources */,
-				B8DB990521C2F49B00C22391 /* Assets.xcassets in Resources */,
+				B8DB992C21C3018B00C22391 /* GoogleService-Info.plist in Resources */,
+				B87336E621C5AD9700FC7039 /* Images.xcassets in Resources */,
 				B8DB990021C2F49900C22391 /* Main.storyboard in Resources */,
+				B843798821C43AB50074D904 /* HealthOS-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +358,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A6E8F07863A57F66D5365B6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mediscover-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F654A1BB786D498F5A62B3B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mediscover/Pods-Mediscover-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mediscover/Pods-Mediscover-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F932E018C26B1D6FEDB41CBB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mediscover/Pods-Mediscover-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mediscover/Pods-Mediscover-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B8DB98F321C2F49800C22391 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8DB98FD21C2F49900C22391 /* ViewController.swift in Sources */,
-				B8DB98FB21C2F49900C22391 /* AppDelegate.swift in Sources */,
+				B8DB993721C3283A00C22391 /* BaseViewController.swift in Sources */,
+				B843798E21C443430074D904 /* Constants.swift in Sources */,
+				B843798C21C43C640074D904 /* NetworkClient+Constants.swift in Sources */,
+				B8B43C0921C5B7A20021FFF4 /* AppDelegate.swift in Sources */,
+				B8DB993921C328EB00C22391 /* LoginController.swift in Sources */,
+				B87336E121C5097400FC7039 /* UIViewController+StoryBoardId.swift in Sources */,
+				B87336DF21C5044A00FC7039 /* Storyboard.swift in Sources */,
+				B8DB993B21C32CD100C22391 /* SignupController.swift in Sources */,
+				B843798621C433C50074D904 /* HomeViewController.swift in Sources */,
+				B8B43C0B21C5B7EE0021FFF4 /* MedicineTableViewCell.swift in Sources */,
+				B8DB98FD21C2F49900C22391 /* LoginViewController.swift in Sources */,
+				B843798A21C43BBA0074D904 /* NetworkClient.swift in Sources */,
+				B8DB993521C3235100C22391 /* SignUpViewController.swift in Sources */,
 				B8DB990321C2F49900C22391 /* Mediscover.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,11 +632,13 @@
 		};
 		B8DB992321C2F49B00C22391 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6671E780308B7732B541AAC0 /* Pods-Mediscover.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWJW457D2L;
 				INFOPLIST_FILE = Mediscover/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,11 +652,13 @@
 		};
 		B8DB992421C2F49B00C22391 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1BBE4B45C9DD83EE30E79E /* Pods-Mediscover.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWJW457D2L;
 				INFOPLIST_FILE = Mediscover/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
