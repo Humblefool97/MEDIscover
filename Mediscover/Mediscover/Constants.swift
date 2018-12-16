@@ -11,4 +11,5 @@ struct Constants {
     static let HeathOsInfoList = "HealthOS-Info"
     static let KeyClientId = "ClientId"
     static let KeyClientSecret = "ClientSecret"
+    static let KeyApiKey = "ApiKey"
 }

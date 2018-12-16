@@ -19,6 +19,11 @@
 		B87336E621C5AD9700FC7039 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87336E521C5AD9600FC7039 /* Images.xcassets */; };
 		B8B43C0921C5B7A20021FFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C0821C5B7A20021FFF4 /* AppDelegate.swift */; };
 		B8B43C0B21C5B7EE0021FFF4 /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C0A21C5B7EE0021FFF4 /* MedicineTableViewCell.swift */; };
+		B8B43C0D21C5C3110021FFF4 /* CustomRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C0C21C5C3110021FFF4 /* CustomRequestAdapter.swift */; };
+		B8B43C0F21C68C580021FFF4 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C0E21C68C580021FFF4 /* HomeController.swift */; };
+		B8B43C1121C68D280021FFF4 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C1021C68D280021FFF4 /* Medicine.swift */; };
+		B8B43C1321C68E1A0021FFF4 /* Constituents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C1221C68E1A0021FFF4 /* Constituents.swift */; };
+		B8B43C1521C68E5E0021FFF4 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C1421C68E5E0021FFF4 /* Schedule.swift */; };
 		B8DB98FD21C2F49900C22391 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB98FC21C2F49900C22391 /* LoginViewController.swift */; };
 		B8DB990021C2F49900C22391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DB98FE21C2F49900C22391 /* Main.storyboard */; };
 		B8DB990321C2F49900C22391 /* Mediscover.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8DB990121C2F49900C22391 /* Mediscover.xcdatamodeld */; };
@@ -64,6 +69,11 @@
 		B87336E521C5AD9600FC7039 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
 		B8B43C0821C5B7A20021FFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8B43C0A21C5B7EE0021FFF4 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
+		B8B43C0C21C5C3110021FFF4 /* CustomRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRequestAdapter.swift; sourceTree = "<group>"; };
+		B8B43C0E21C68C580021FFF4 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		B8B43C1021C68D280021FFF4 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		B8B43C1221C68E1A0021FFF4 /* Constituents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constituents.swift; sourceTree = "<group>"; };
+		B8B43C1421C68E5E0021FFF4 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		B8DB98F721C2F49800C22391 /* Mediscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mediscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DB98FC21C2F49900C22391 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B8DB98FF21C2F49900C22391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -211,6 +221,9 @@
 		B8DB992E21C3047E00C22391 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B8B43C1021C68D280021FFF4 /* Medicine.swift */,
+				B8B43C1221C68E1A0021FFF4 /* Constituents.swift */,
+				B8B43C1421C68E5E0021FFF4 /* Schedule.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -222,6 +235,8 @@
 				B8DB993A21C32CD100C22391 /* SignupController.swift */,
 				B843798921C43BBA0074D904 /* NetworkClient.swift */,
 				B843798B21C43C640074D904 /* NetworkClient+Constants.swift */,
+				B8B43C0C21C5C3110021FFF4 /* CustomRequestAdapter.swift */,
+				B8B43C0E21C68C580021FFF4 /* HomeController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -446,7 +461,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B43C1321C68E1A0021FFF4 /* Constituents.swift in Sources */,
 				B8DB993721C3283A00C22391 /* BaseViewController.swift in Sources */,
+				B8B43C1121C68D280021FFF4 /* Medicine.swift in Sources */,
 				B843798E21C443430074D904 /* Constants.swift in Sources */,
 				B843798C21C43C640074D904 /* NetworkClient+Constants.swift in Sources */,
 				B8B43C0921C5B7A20021FFF4 /* AppDelegate.swift in Sources */,
@@ -458,7 +475,10 @@
 				B8B43C0B21C5B7EE0021FFF4 /* MedicineTableViewCell.swift in Sources */,
 				B8DB98FD21C2F49900C22391 /* LoginViewController.swift in Sources */,
 				B843798A21C43BBA0074D904 /* NetworkClient.swift in Sources */,
+				B8B43C0F21C68C580021FFF4 /* HomeController.swift in Sources */,
 				B8DB993521C3235100C22391 /* SignUpViewController.swift in Sources */,
+				B8B43C1521C68E5E0021FFF4 /* Schedule.swift in Sources */,
+				B8B43C0D21C5C3110021FFF4 /* CustomRequestAdapter.swift in Sources */,
 				B8DB990321C2F49900C22391 /* Mediscover.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

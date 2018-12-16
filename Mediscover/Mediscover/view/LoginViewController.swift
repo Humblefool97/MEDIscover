@@ -37,16 +37,6 @@ class LoginViewController: BaseViewController {
                 }
             }else{
                 //Move to Home screen
-                NetworkClient.shared.getSessionId{
-                    (isSuccess , error) in
-                    self.progressIndicator.stopAnimating()
-                    self.progressIndicator.isHidden = true
-                    if(isSuccess){
-                       //Do something
-                    }else{
-                       self.displayAlerMessage(message: error ?? "Something went wrong!!")
-                    }
-                }
             }
         }
     }
