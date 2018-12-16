@@ -31,7 +31,8 @@ extension NetworkClient{
         static let apiPath = "/api"
         static let apiPathExtension = "/v1"
         static let apiPathExtensionAuth = "/oauth/token.json"
-        static let apiPathExtensionAllMedicines = "/medicines/brands"
+        static let apiPathExtensionMedicines = "/medicines/brands"
+        static let apiPathExtensionSearch = "/search/medicines/brands"
     }
     
     struct ParameterKeys {
@@ -46,27 +47,6 @@ extension NetworkClient{
     struct HealthOSResponseKeys {
         static let AccessToken = "access_token"
     }
-    
-//    {
-//    "name": "VOLIX 0.3MG TABLET",
-//    "form": "Tablet",
-//    "standardUnits": 10,
-//    "packageForm": "Strip",
-//    "price": 109.5,
-//    "size": "10  Tablet",
-//    "manufacturer": "Ranbaxy Laboratories Ltd",
-//    "constituents": [
-//    {
-//    "name": "Voglibose",
-//    "strength": "0.3 mg"
-//    }
-//    ],
-//    "schedule": {
-//    "category": "OTC",
-//    "label": "It can be sold without a prescription"
-//    },
-//    "medicine_id": "4141z"
-//    }
     struct ResponceValues {
         static let Id = "medicine_id"
         static let Name = "name"

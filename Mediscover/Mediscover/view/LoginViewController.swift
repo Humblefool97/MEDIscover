@@ -37,6 +37,9 @@ class LoginViewController: BaseViewController {
                 }
             }else{
                 //Move to Home screen
+                let storyBoard: UIStoryboard = UIStoryboard(name: "PostLogin", bundle: nil)
+                let viewController = storyBoard.instantiateViewController(withIdentifier: "PostLogin")
+                self.present(viewController, animated:true, completion:nil)
             }
         }
     }

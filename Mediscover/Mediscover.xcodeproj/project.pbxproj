@@ -24,6 +24,9 @@
 		B8B43C1121C68D280021FFF4 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C1021C68D280021FFF4 /* Medicine.swift */; };
 		B8B43C1321C68E1A0021FFF4 /* Constituents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C1221C68E1A0021FFF4 /* Constituents.swift */; };
 		B8B43C1521C68E5E0021FFF4 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C1421C68E5E0021FFF4 /* Schedule.swift */; };
+		B8B43C1721C6A0BE0021FFF4 /* HomeViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C1621C6A0BE0021FFF4 /* HomeViewController+Delegates.swift */; };
+		B8B43C1921C6D6C60021FFF4 /* PostLoginRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C1821C6D6C60021FFF4 /* PostLoginRootViewController.swift */; };
+		B8B43C1B21C6E0520021FFF4 /* TextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B43C1A21C6E0520021FFF4 /* TextView+Extension.swift */; };
 		B8DB98FD21C2F49900C22391 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DB98FC21C2F49900C22391 /* LoginViewController.swift */; };
 		B8DB990021C2F49900C22391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DB98FE21C2F49900C22391 /* Main.storyboard */; };
 		B8DB990321C2F49900C22391 /* Mediscover.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8DB990121C2F49900C22391 /* Mediscover.xcdatamodeld */; };
@@ -74,6 +77,9 @@
 		B8B43C1021C68D280021FFF4 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		B8B43C1221C68E1A0021FFF4 /* Constituents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constituents.swift; sourceTree = "<group>"; };
 		B8B43C1421C68E5E0021FFF4 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		B8B43C1621C6A0BE0021FFF4 /* HomeViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegates.swift"; sourceTree = "<group>"; };
+		B8B43C1821C6D6C60021FFF4 /* PostLoginRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoginRootViewController.swift; sourceTree = "<group>"; };
+		B8B43C1A21C6E0520021FFF4 /* TextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView+Extension.swift"; sourceTree = "<group>"; };
 		B8DB98F721C2F49800C22391 /* Mediscover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mediscover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DB98FC21C2F49900C22391 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B8DB98FF21C2F49900C22391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -214,6 +220,9 @@
 				B843798521C433C50074D904 /* HomeViewController.swift */,
 				B87336E021C5097400FC7039 /* UIViewController+StoryBoardId.swift */,
 				B8B43C0A21C5B7EE0021FFF4 /* MedicineTableViewCell.swift */,
+				B8B43C1621C6A0BE0021FFF4 /* HomeViewController+Delegates.swift */,
+				B8B43C1821C6D6C60021FFF4 /* PostLoginRootViewController.swift */,
+				B8B43C1A21C6E0520021FFF4 /* TextView+Extension.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -464,10 +473,12 @@
 				B8B43C1321C68E1A0021FFF4 /* Constituents.swift in Sources */,
 				B8DB993721C3283A00C22391 /* BaseViewController.swift in Sources */,
 				B8B43C1121C68D280021FFF4 /* Medicine.swift in Sources */,
+				B8B43C1B21C6E0520021FFF4 /* TextView+Extension.swift in Sources */,
 				B843798E21C443430074D904 /* Constants.swift in Sources */,
 				B843798C21C43C640074D904 /* NetworkClient+Constants.swift in Sources */,
 				B8B43C0921C5B7A20021FFF4 /* AppDelegate.swift in Sources */,
 				B8DB993921C328EB00C22391 /* LoginController.swift in Sources */,
+				B8B43C1921C6D6C60021FFF4 /* PostLoginRootViewController.swift in Sources */,
 				B87336E121C5097400FC7039 /* UIViewController+StoryBoardId.swift in Sources */,
 				B87336DF21C5044A00FC7039 /* Storyboard.swift in Sources */,
 				B8DB993B21C32CD100C22391 /* SignupController.swift in Sources */,
@@ -479,6 +490,7 @@
 				B8DB993521C3235100C22391 /* SignUpViewController.swift in Sources */,
 				B8B43C1521C68E5E0021FFF4 /* Schedule.swift in Sources */,
 				B8B43C0D21C5C3110021FFF4 /* CustomRequestAdapter.swift in Sources */,
+				B8B43C1721C6A0BE0021FFF4 /* HomeViewController+Delegates.swift in Sources */,
 				B8DB990321C2F49900C22391 /* Mediscover.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

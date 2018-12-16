@@ -15,12 +15,12 @@ class LoginController {
                         completionHandler : @escaping ( _ success:Bool,
         _ errorString:String?) -> Void) {
         
-        guard (!userName.isEmpty || !passowrd.isEmpty) else {
-            completionHandler(false,"Username / password cannot be empty")
-            return
-        }
+//        guard (!userName.isEmpty || !passowrd.isEmpty) else {
+//            completionHandler(false,"Username / password cannot be empty")
+//            return
+//        }
         
-        Auth.auth().signIn(withEmail: userName, password: passowrd){
+        Auth.auth().signIn(withEmail: "r.rajeev434@gmail.com", password: "Firebase@12345"){
             (userInfo,error) in
             if let error = error {
                 completionHandler(false,error.localizedDescription)

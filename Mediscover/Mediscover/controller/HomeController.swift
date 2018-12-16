@@ -17,7 +17,7 @@ class HomeController{
         for item in result {
             let medicine:Medicine = Medicine()
             if let id = item[NetworkClient.ResponceValues.Id] as? String , let name = item[NetworkClient.ResponceValues.Name] as? String, let  price = item[NetworkClient.ResponceValues.Price] as? Double,
-                let  schedule = item[NetworkClient.ResponceValues.Schedule] as?[String:String] , let constituents = item[NetworkClient.ResponceValues.Constituents] as? [[String:String]] , let  manufacturer = item[NetworkClient.ResponceValues.Manufacturer] as? String , let packageForm = item[NetworkClient.ResponceValues.PackageForm] as? String, let size = item[NetworkClient.ResponceValues.Size] as? String,let standardUnits = item[NetworkClient.ResponceValues.Units] as? Int{
+                let  schedule = item[NetworkClient.ResponceValues.Schedule] as?[String:String] , let constituents = item[NetworkClient.ResponceValues.Constituents] as? [[String:String]] , let  manufacturer = item[NetworkClient.ResponceValues.Manufacturer] as? String , let packageForm = item[NetworkClient.ResponceValues.PackageForm] as? String, let size = item[NetworkClient.ResponceValues.Size] as? String,let standardUnits = item[NetworkClient.ResponceValues.Units] as? Int, let form = item[NetworkClient.ResponceValues.Form] as? String{
                 medicine.Id = id
                 medicine.Name = name
                 medicine.Manufacturer = manufacturer
@@ -25,6 +25,7 @@ class HomeController{
                 medicine.Size = size
                 medicine.StandardUnits = standardUnits
                 medicine.Price = price
+                medicine.Form = form
                 for constituent in constituents{
                     let constituentInst = Constituents()
                     if let constituentName = constituent["name"] , let strength = constituent["strength"]{

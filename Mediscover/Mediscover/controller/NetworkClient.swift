@@ -18,7 +18,7 @@ class NetworkClient{
         
         let params = [NetworkClient.ParameterKeys.Page:pageNum,
                       NetworkClient.ParameterKeys.Size:count]
-        let url = getUrlFromParameters(params as [String : AnyObject], NetworkClient.HealthOS.apiPathExtensionAllMedicines)
+        let url = getUrlFromParameters(params as [String : AnyObject], NetworkClient.HealthOS.apiPathExtensionMedicines)
         // get a session manager and add the request adapter
         let sessionManager = Alamofire.SessionManager.default
         sessionManager.adapter = CustomRequestAdapter()
@@ -37,11 +37,9 @@ class NetworkClient{
             case .failure(let error):
                 completionHandler(false,nil,error.localizedDescription)
             }
-            
         }
-        
-        
     }
+    
     private  func getUrlFromParameters (_ parameters: [String:AnyObject], _ pathExtension:String) -> URL{
         var components = URLComponents()
         let withPathExtension = HealthOS.apiPathExtension + pathExtension

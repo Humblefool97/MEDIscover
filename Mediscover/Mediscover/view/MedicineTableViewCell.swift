@@ -16,5 +16,5 @@ class MedicineTableViewCell:UITableViewCell {
     @IBOutlet weak var CostText: UILabel!
     
     @IBOutlet weak var ManufacturerText: UILabel!
-    
+
 }
