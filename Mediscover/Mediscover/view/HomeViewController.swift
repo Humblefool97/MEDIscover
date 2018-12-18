@@ -36,7 +36,6 @@ class HomeViewController: BaseViewController {
     func getMedicines(){
         HomeController.Shared.getMedicines(pageNum: PageNum, count: Count){
             (isSuccess,medicineArray,errorString) in
-            self.ActivityIndicator.stopAnimating()
             self.IsFetchingNextPage = false
             if (!isSuccess){
                 self.displayAlerMessage(message: errorString!)
@@ -44,9 +43,12 @@ class HomeViewController: BaseViewController {
                 self.Medicines.append(contentsOf: medicineArray)
                 DispatchQueue.main.async {
                     self.TableView.reloadData()
-                    if(self.PagingSpinner.isAnimating){
-                        self.PagingSpinner.stopAnimating()
-                    }
+                }
+            }
+            DispatchQueue.main.async {
+                self.ActivityIndicator.stopAnimating()
+                if(self.PagingSpinner.isAnimating){
+                    self.PagingSpinner.stopAnimating()
                 }
             }
         }
