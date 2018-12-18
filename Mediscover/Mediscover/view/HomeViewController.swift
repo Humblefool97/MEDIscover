@@ -10,37 +10,43 @@ import UIKit
 
 class HomeViewController: BaseViewController {
     //MARK: Properties
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var ActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var TableView: UITableView!
     @IBOutlet weak var SearchBarView: UISearchBar!
-    var medicines:[Medicine] = []
-    var pageNum = NetworkClient.ParameterKeys.Page
-    var count = NetworkClient.ParameterKeys.Size
+    var Medicines:[Medicine] = []
+    var PageNum = NetworkClient.ParameterValues.DefaultPage
+    var Count = NetworkClient.ParameterValues.DefaultSize
+    let PagingSpinner = UIActivityIndicatorView(style: .gray)
+    var IsFetchingNextPage = false
     
-    //MARK: Methods
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.delegate = self
         TableView.dataSource = self
-        activityIndicator.isHidden = false
-        activityIndicator.startAnimating()
+        TableView.prefetchDataSource = self
+        ActivityIndicator.isHidden = false
+        ActivityIndicator.startAnimating()
         SearchBarView.delegate = self
+        PagingSpinner.color = UIColor(red: 22.0/255.0, green: 106.0/255.0, blue: 176.0/255.0, alpha: 1.0)
+        PagingSpinner.hidesWhenStopped = true
+        TableView.tableFooterView = PagingSpinner
         getMedicines()
     }
     
-    fileprivate func getMedicines(){
-        HomeController.Shared.getMedicines(pageNum: pageNum, count: count){
+    func getMedicines(){
+        HomeController.Shared.getMedicines(pageNum: PageNum, count: Count){
             (isSuccess,medicineArray,errorString) in
-            self.activityIndicator.stopAnimating()
+            self.ActivityIndicator.stopAnimating()
+            self.IsFetchingNextPage = false
             if (!isSuccess){
                 self.displayAlerMessage(message: errorString!)
             }else if let medicineArray = medicineArray {
-                self.medicines = medicineArray
+                self.Medicines.append(contentsOf: medicineArray)
                 DispatchQueue.main.async {
                     self.TableView.reloadData()
+                    if(self.PagingSpinner.isAnimating){
+                        self.PagingSpinner.stopAnimating()
+                    }
                 }
             }
         }

@@ -41,6 +41,8 @@ class HomeController{
                     medicine.ScheduleInst = scheduleInst
                 }
                 medicineArray.append(medicine)
+            }else{
+                print("Medicine rejected for parse:\(item[NetworkClient.ResponceValues.Id] as? String)")
             }
         }
     }
